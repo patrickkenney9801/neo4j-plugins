@@ -3,13 +3,13 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.neo4j.extract_schema</groupId>
-  <artifactId>procedure-template</artifactId>
+  <groupId>org.neo4j.extract</groupId>
+  <artifactId>extract</artifactId>
   <version>1.0.0</version>
 
   <packaging>jar</packaging>
-  <name>Neo4j Expor Schema</name>
-  <description>A plugin for exporting a database's schema</description>
+  <name>Neo4j Export</name>
+  <description>A plugin for exporting a database's data</description>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -17,6 +17,7 @@
     <neo4j.version>4.0.4</neo4j.version>
     <neo4j-java-driver.version>4.0.4</neo4j-java-driver.version>
     <arrow.version>0.17.1</arrow.version>
+    <apoc.version>4.0.0.14</apoc.version>
 
     <maven-shade-plugin.version>3.2.1</maven-shade-plugin.version>
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
@@ -29,6 +30,12 @@
       <artifactId>neo4j</artifactId>
       <version>${neo4j.version}</version>
       <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.neo4j.procedure</groupId>
+      <artifactId>apoc</artifactId>
+      <version>${apoc.version}</version>
     </dependency>
 
     <dependency>
