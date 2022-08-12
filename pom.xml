@@ -17,7 +17,7 @@
     <neo4j.version>4.0.4</neo4j.version>
     <neo4j-java-driver.version>4.0.4</neo4j-java-driver.version>
     <arrow.version>0.17.1</arrow.version>
-    <apoc.version>4.0.0.14</apoc.version>
+    <apoc.version>4.3.0.7</apoc.version>
 
     <maven-shade-plugin.version>3.2.1</maven-shade-plugin.version>
     <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
